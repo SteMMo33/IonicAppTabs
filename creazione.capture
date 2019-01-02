@@ -1,0 +1,211 @@
+
+stefano@GhilbaDebian:~/Scrivania/Progetti$
+stefano@GhilbaDebian:~/Scrivania/Progetti$ ionic start IonicAppTabs tabs
+[INFO] You are about to create an Ionic 3 app. Would you like to try the release candidate for Ionic 4?
+
+       Ionic 4 uses the power of the modern Web and embraces the Angular CLI and Angular Router to bring you
+       the best version of Ionic ever. See our blog announcement[1] and documentation[2] for more
+       information. We'd love to hear your feedback on our latest version!
+
+       [1]: https://blog.ionicframework.com/ionic-framework-4-0-rc-shipped-paving-way-for-final
+       [2]: https://beta.ionicframework.com/docs/
+
+? Try Ionic 4? No
+✔ Preparing directory ./IonicAppTabs - done!
+✔ Downloading and extracting tabs starter - done!
+
+Installing dependencies may take several minutes.
+
+     ✨   IONIC  DEVAPP   ✨
+
+ Speed up development with the Ionic DevApp, our fast, on-device testing mobile app
+
+  -  🔑   Test on iOS and Android without Native SDKs
+  -  🚀   LiveReload for instant style and JS updates
+
+ -->    Install DevApp: https://bit.ly/ionic-dev-app    <--
+
+────────────────────────────────────────────────────────────
+
+> npm i
+npm WARN deprecated browserslist@2.11.3: Browserslist 2 could fail on reading Browserslist >3.0 config used in other tools.
+
+> node-sass@4.11.0 install /home/stefano/Scrivania/Progetti/IonicAppTabs/node_modules/node-sass
+> node scripts/install.js
+
+Downloading binary from https://github.com/sass/node-sass/releases/download/v4.11.0/linux-x64-64_binding.node
+Download complete  ] - :
+Binary saved to /home/stefano/Scrivania/Progetti/IonicAppTabs/node_modules/node-sass/vendor/linux-x64-64/binding.node
+Caching binary to /home/stefano/.npm/node-sass/4.11.0/linux-x64-64_binding.node
+
+> uglifyjs-webpack-plugin@0.4.6 postinstall /home/stefano/Scrivania/Progetti/IonicAppTabs/node_modules/uglifyjs-webpack-plugin
+> node lib/post_install.js
+
+
+> node-sass@4.11.0 postinstall /home/stefano/Scrivania/Progetti/IonicAppTabs/node_modules/node-sass
+> node scripts/build.js
+
+Binary found at /home/stefano/Scrivania/Progetti/IonicAppTabs/node_modules/node-sass/vendor/linux-x64-64/binding.node
+Testing binary
+Binary is fine
+npm notice created a lockfile as package-lock.json. You should commit this file.
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.4 (node_modules/fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.4: wanted {"os":"darwin","arch":"any"} (current: {"os":"linux","arch":"x64"})
+
+added 687 packages from 631 contributors and audited 6150 packages in 116.549s
+found 0 vulnerabilities
+
+> git init
+Initialized empty Git repository in /home/stefano/Scrivania/Progetti/IonicAppTabs/.git/
+
+     🔥   IONIC  APPFLOW   🔥
+
+ Supercharge your Ionic development with the Ionic Appflow SDK
+
+  -  ⚠️   Track runtime errors in real-time, back to your original TypeScript
+  -  📲  Push remote updates and skip the app store queue
+
+ Learn more about Ionic Appflow: https://ionicframework.com/appflow
+
+────────────────────────────────────────────────────────────
+
+? Install the free Ionic Appflow SDK and connect your app? Yes
+> npm i --save -E @ionic/pro
+npm WARN @ionic/pro@2.0.4 requires a peer of cordova-plugin-ionic@^5.0.0 but none is installed. You must install peer dependencies yourself.
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.4 (node_modules/fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.4: wanted {"os":"darwin","arch":"any"} (current: {"os":"linux","arch":"x64"})
+
++ @ionic/pro@2.0.4
+added 1 package from 1 contributor and audited 6151 packages in 11.715s
+found 0 vulnerabilities
+
+> ionic link --name IonicAppTabs
+? What would you like to do? Create a new app on Ionic Appflow
+
+[INFO] Ionic Appflow uses a git-based workflow to manage app updates.
+
+       You will be prompted to set up the git host and repository for this new app. See the docs[1] for more
+       information.
+
+       [1]: https://ionicframework.com/docs/appflow/basics/git/
+
+? Which git host would you like to use? GitHub
+
+[INFO] GitHub OAuth setup required.
+
+       To continue, we need you to authorize Ionic Appflow with your GitHub account. A browser will open and
+       prompt you to complete the authorization request. When finished, please return to the CLI to continue
+       linking your app.
+? Open browser: Yes
+? Authorized and ready to continue: Yes
+
+[INFO] In order to link to a GitHub repository the repository must already exist on GitHub.
+[INFO] If the repository does not exist please create one now before continuing.
+
+       If you're not familiar with Git you can learn how to set it up with GitHub here:
+
+       https://help.github.com/articles/set-up-git/
+
+       You can find documentation on how to create a repository on GitHub and push to it here:
+
+       https://help.github.com/articles/create-a-repo/
+? Does the repository exist on GitHub? Yes
+✔ Looking up your GitHub repositories: 6 found - done!
+? Which GitHub repository would you like to link? SteMMo33 / IonicAppTabs
+
+[INFO] By default Ionic Appflow links only to the master branch.
+[INFO] If you'd like to link to another branch or multiple branches you'll need to select each branch to
+       connect to.
+
+       If you're not familiar with on working with branches in GitHub you can read about them here:
+
+       https://guides.github.com/introduction/flow/
+
+
+? Which would you like to do? Link to master branch only
+[OK] App b91aae03 connected to https://github.com/SteMMo33/IonicAppTabs
+> ionic config set id "b91aae03" --json
+[OK] id set to "b91aae03"!
+[OK] Project linked with app b91aae03!
+[INFO] Here are some additional links that can help you with you first push to GitHub:
+
+       Adding GitHub as a remote:
+       	https://help.github.com/articles/adding-a-remote/
+
+       Pushing to a remote:
+       	https://help.github.com/articles/pushing-to-a-remote/
+
+       Working with branches:
+       	https://guides.github.com/introduction/flow/
+
+       More comfortable with a GUI? Try GitHub Desktop!
+       	https://desktop.github.com/
+[INFO] You can now push to one of your branches on GitHub to trigger a build in Ionic Appflow!
+
+       If you haven't added GitHub as your origin you can do so by running:
+
+       git remote add origin https://github.com/SteMMo33/IonicAppTabs
+
+       You can find additional links above to help if you're having issues.
+> git add -A
+> git commit -m "Initial commit" --no-gpg-sign
+[master (root-commit) 6cbceb3] Initial commit
+ 29 files changed, 6879 insertions(+)
+ create mode 100644 .editorconfig
+ create mode 100644 .gitignore
+ create mode 100644 ionic.config.json
+ create mode 100644 package-lock.json
+ create mode 100644 package.json
+ create mode 100644 src/app/app.component.ts
+ create mode 100644 src/app/app.html
+ create mode 100644 src/app/app.module.ts
+ create mode 100644 src/app/app.scss
+ create mode 100644 src/app/main.ts
+ create mode 100644 src/assets/icon/favicon.ico
+ create mode 100644 src/assets/imgs/logo.png
+ create mode 100644 src/index.html
+ create mode 100644 src/manifest.json
+ create mode 100644 src/pages/about/about.html
+ create mode 100644 src/pages/about/about.scss
+ create mode 100644 src/pages/about/about.ts
+ create mode 100644 src/pages/contact/contact.html
+ create mode 100644 src/pages/contact/contact.scss
+ create mode 100644 src/pages/contact/contact.ts
+ create mode 100644 src/pages/home/home.html
+ create mode 100644 src/pages/home/home.scss
+ create mode 100644 src/pages/home/home.ts
+ create mode 100644 src/pages/tabs/tabs.html
+ create mode 100644 src/pages/tabs/tabs.ts
+ create mode 100644 src/service-worker.js
+ create mode 100644 src/theme/variables.scss
+ create mode 100644 tsconfig.json
+ create mode 100644 tslint.json
+
+[INFO] Next Steps:
+
+       - Go to your newly created project: cd ./IonicAppTabs
+       - Run ionic serve within the app directory to see your app
+       - Build features and components: https://beta.ionicframework.com/docs/building/scaffolding
+       - Get Ionic DevApp for easy device testing: https://bit.ly/ionic-dev-app
+       - Finish setting up Ionic Appflow Error Monitoring:
+       https://ionicframework.com/docs/appflow/monitoring/#getting-started
+       - Finally, push your code to Ionic Appflow to perform real-time updates, and more: git push ionic
+       master
+stefano@GhilbaDebian:~/Scrivania/Progetti$
+stefano@GhilbaDebian:~/Scrivania/Progetti/IonicAppTabs$
+stefano@GhilbaDebian:~/Scrivania/Progetti/IonicAppTabs$ git remote add origin https://github.com/SteMMo33/IonicAppTabs.git
+stefano@GhilbaDebian:~/Scrivania/Progetti/IonicAppTabs$
+stefano@GhilbaDebian:~/Scrivania/Progetti/IonicAppTabs$ 
+stefano@GhilbaDebian:~/Scrivania/Progetti/IonicAppTabs$ git push -u origin master
+Username for 'https://github.com': stefano.mora@libero.it
+Password for 'https://stefano.mora@libero.it@github.com':
+Counting objects: 42, done.
+Delta compression using up to 2 threads.
+Compressing objects: 100% (35/35), done.
+Writing objects: 100% (42/42), 99.00 KiB | 0 bytes/s, done.
+Total 42 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), done.
+To https://github.com/SteMMo33/IonicAppTabs.git
+ * [new branch]      master -> master
+Branch master set up to track remote branch master from origin.
+stefano@GhilbaDebian:~/Scrivania/Progetti/IonicAppTabs$
