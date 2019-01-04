@@ -19,4 +19,13 @@ export class MyApp {
       splashScreen.hide();
     });
   }
+
+  wsOpen() {
+    console.log("App:wsOpen")
+  }
+
+  wsClose() {
+    console.log("App:wsClose")
+  }
+
 }

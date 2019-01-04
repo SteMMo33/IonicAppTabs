@@ -1,19 +1,58 @@
 <ion-header>
   <ion-navbar>
-    <ion-title>Ionic 3 framework</ion-title>
+    <ion-title>Ionic 3 - Test WebSocket</ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  <h2>Welcome to Ionic3 !</h2>
+  <h2>Welcome to Ionic 3 app!</h2>
   <p>
     This starter project comes with simple tabs-based layout for apps
     that are going to primarily use a Tabbed UI.
   </p>
-  <p>
-    Take a look at the <code>src/pages/</code> directory to add or change tabs,
-    update any existing page or create new pages.
-  </p>
 
-  <p>Mia prima prova di Ionic 3</p>
+	<ion-card>
+		<ion-card-header>Platform information</ion-card-header>
+		<ion-card-content>
+			Platform: {{ platformName }} <br> 
+			Language: {{ platfomrLanf }} <br> 
+			Connection: {{connected}}
+		</ion-card-content>
+	</ion-card>
+
+  <ion-card ng-show="showNameInput">
+    <!-- Set the heading of the name input card -->
+     
+  <ion-card-header>
+        Enter Name
+  </ion-card-header>
+     
+  	<div class="item item-text-wrap">
+        <!-- Define the input element for the name text field. -->
+        <label class="item item-input">
+            <!-- The ng-model attribute links the contents of this input box with the "userName" scope variable. -->
+            <input ng-model="userName" type="text" placeholder="Name">
+        </label>
+        <!-- Define the join button. -->
+        <label class="item item-input">
+            <!-- This is the button definition. The ng-click attribute tells Angular to call the "submitName()" function, passing in the "userName" scope variable (that we defined above) when clicked. -->
+            <button ng-click="submitName(userName)" ion-button>
+                Join Chat
+            </button>
+        </label>
+    </div>
+  </ion-card>
+
+  <ion-card>
+    <button ion-button (click)="wsOpen()">
+				<ion-icon name="cloudy"></ion-icon> Connect
+		</button>
+    <button ion-button (click)="wsClose()">
+			<ion-icon name="cloud-outline"></ion-icon> Close
+		</button>
+    <button ion-button  ion-icon-block (click)="wsSend()">
+				<ion-icon name="cloud-upload"></ion-icon> Send
+			</button>
+		</ion-card>
+
 </ion-content>
