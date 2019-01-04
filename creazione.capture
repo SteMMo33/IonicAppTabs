@@ -192,10 +192,13 @@ found 0 vulnerabilities
        - Finally, push your code to Ionic Appflow to perform real-time updates, and more: git push ionic
        master
 stefano@GhilbaDebian:~/Scrivania/Progetti$
+
+-- Per abilitare la connessione a GitHub
+
 stefano@GhilbaDebian:~/Scrivania/Progetti/IonicAppTabs$
 stefano@GhilbaDebian:~/Scrivania/Progetti/IonicAppTabs$ git remote add origin https://github.com/SteMMo33/IonicAppTabs.git
 stefano@GhilbaDebian:~/Scrivania/Progetti/IonicAppTabs$
-stefano@GhilbaDebian:~/Scrivania/Progetti/IonicAppTabs$ 
+stefano@GhilbaDebian:~/Scrivania/Progetti/IonicAppTabs$
 stefano@GhilbaDebian:~/Scrivania/Progetti/IonicAppTabs$ git push -u origin master
 Username for 'https://github.com': stefano.mora@libero.it
 Password for 'https://stefano.mora@libero.it@github.com':
