@@ -20,12 +20,4 @@ export class MyApp {
     });
   }
 
-  wsOpen() {
-    console.log("App:wsOpen")
-  }
-
-  wsClose() {
-    console.log("App:wsClose")
-  }
-
 }

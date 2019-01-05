@@ -212,3 +212,15 @@ To https://github.com/SteMMo33/IonicAppTabs.git
  * [new branch]      master -> master
 Branch master set up to track remote branch master from origin.
 stefano@GhilbaDebian:~/Scrivania/Progetti/IonicAppTabs$
+
+
+
+Installato plugin per lo splash-screen:
+$ ionic cordova plugin add cordova-plugin-splashscreen
+$ npm install --save @ionic-native/splash-screen
+
+
+Installato plgin per QRCode:
+$ ionic cordova plugin add cordova-plugin-qrscanner
+$ npm install --save @ionic-native/qr-scanner
+
