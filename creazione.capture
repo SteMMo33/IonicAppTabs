@@ -220,7 +220,13 @@ $ ionic cordova plugin add cordova-plugin-splashscreen
 $ npm install --save @ionic-native/splash-screen
 
 
-Installato plgin per QRCode:
+Installato plugin per QRCode:
 $ ionic cordova plugin add cordova-plugin-qrscanner
 $ npm install --save @ionic-native/qr-scanner
 
+Per Creare un nuovo componente:
+$ ionic g component MyComponent
+
+Creati componenti:
+- joke
+- joke-list

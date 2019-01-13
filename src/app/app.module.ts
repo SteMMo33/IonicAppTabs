@@ -7,11 +7,14 @@ import { AboutPage } from '../pages/about/about';
 import { ContactPage } from '../pages/contact/contact';
 import { HomePage } from '../pages/home/home';
 import { TabsPage } from '../pages/tabs/tabs';
+import { QrCodePage } from '../pages/qrcode/qrcode';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { QRScanner } from '@ionic-native/qr-scanner';
-import { QrCodePage } from '../pages/qrcode/qrcode';
+
+import { ComponentsModule } from '../components/components.module';
+
 
 @NgModule({
   declarations: [
@@ -24,7 +27,8 @@ import { QrCodePage } from '../pages/qrcode/qrcode';
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp),
+    ComponentsModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
