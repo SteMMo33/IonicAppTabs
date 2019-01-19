@@ -10,6 +10,8 @@ export class QrCodePage {
 
   constructor(public navCtrl: NavController, private qrScanner: QRScanner) {
 
+    console.log("QrCodePate constr")
+    
     this.qrScanner.prepare()
       .then( ( scanStatus: QRScannerStatus) => {
           if (scanStatus.authorized){
