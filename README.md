@@ -5,7 +5,7 @@ This is a sample project to test Ionic Framework ver.3
 
 Based on basic Tabs layout.
 
-Added Android support
+Added Android support - version XX TBD
 
 <h1>Angular </h1>
 
