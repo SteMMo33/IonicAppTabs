@@ -17,8 +17,8 @@ export class QrCodePage {
           if (scanStatus.authorized){
             console.log("Scanner autor.");
             // start scanning
-            let scanSub = this.qrScanner.scan().subscribe((text: string) => {
-              console.log('Scanned something', text);
+            let scanSub = this.qrScanner.scan().subscribe( (text: string) => {
+              console.log('Scanned something:', text);
 
               this.qrScanner.hide(); // hide camera preview
               scanSub.unsubscribe(); // stop scanning
@@ -34,5 +34,6 @@ export class QrCodePage {
       )
       .catch((e: any) => console.log('Error is ', e));
   }
+
 
 }
