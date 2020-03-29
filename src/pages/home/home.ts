@@ -14,18 +14,17 @@ export class HomePage {
 
 	private ws: WebSocket
 
-
 	constructor(
 		public navCtrl: NavController,
 		public plt: Platform,
 		public alertCtrl: AlertController
 	) {
-			console.log("Platforms: " + this.plt.platforms.length)
-			this.platformName = plt.platforms()
-			this.platformLang = plt.lang()
-		}
+		console.log("Platforms: " + this.plt.platforms.length)
+		this.platformName = plt.platforms()
+		this.platformLang = plt.lang()
+	}
 
-  wsOpen() {
+  	wsOpen() {
 		console.log("Home:wsOpen")
 		this.ws = new WebSocket( "ws://192.168.10.104:7681")
 		this.ws.onopen = () => {
@@ -41,9 +40,9 @@ export class HomePage {
 			console.log("onmsg "+ ev)			
 		}
 		this.connected = true
-  }
+  	}
 
-  wsClose() {
+  	wsClose() {
 		console.log("Home:wsClose")
 		if (this.connected)
 			this.showConfirm()		
@@ -70,7 +69,7 @@ export class HomePage {
         }
       ]
     });
-    confirm.present();
+    	confirm.present();
 	}
 	
 	wsSend() {

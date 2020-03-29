@@ -15,5 +15,6 @@ Added a custom components called &lt;joke&gt; and &lt;joke-list&gt;.
 
 <li>QR scanner</li>
 
+
 --
 SM

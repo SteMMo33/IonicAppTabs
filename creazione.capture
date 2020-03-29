@@ -316,3 +316,50 @@ System:
    npm    : 6.5.0
    OS     : Linux 4.9
 
+-------
+
+25.01.2020
+
+In home.ts c'è la gestione di un websocket
+
+Fatto aggiornamento ionic da 4.8.0 a 5.2.2
+Aggiornamento cordova da 8.1.2 a 9.0.0
+Installato per poter eseguire il run:
+$ sudo npm i -g native-run
+
+stefano@GhilbaDebian:~/Scrivania/Progetti/IonicAppTabs$ ionic info
+
+Ionic:
+
+   Ionic CLI          : 5.4.15 (/usr/lib/node_modules/ionic)
+   Ionic Framework    : ionic-angular 3.9.9
+   @ionic/app-scripts : 3.2.4
+
+Cordova:
+
+   Cordova CLI       : 9.0.0 (cordova-lib@9.0.1)
+   Cordova Platforms : android 7.1.4
+   Cordova Plugins   : cordova-plugin-ionic-keyboard 2.1.3, cordova-plugin-ionic-webview 2.3.2, (and 5 other plugins)
+
+Utility:
+
+   cordova-res : not installed
+   native-run  : 0.3.0
+
+System:
+
+   NodeJS : v10.18.1 (/usr/bin/node)
+   npm    : 6.13.6
+   OS     : Linux 4.19
+
+---
+
+Compilazione con:
+$ ionic cordova build android
+
+
+
+$ionic doctor check
+ha rilevato 3 errori...corretti.
+
+

@@ -35,5 +35,4 @@ export class QrCodePage {
       .catch((e: any) => console.log('Error is ', e));
   }
 
-
 }
